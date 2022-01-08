@@ -8,6 +8,7 @@ const todoBox = todoPage.querySelector('ul');
 
 const KEYTODO = 'key-todo';
 //
+todoPage.classList.add('hidden');
 todoBtn.addEventListener('click', showPage);
 function showPage() {
   todoPage.classList.toggle('hidden');

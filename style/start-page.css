@@ -1,42 +1,47 @@
-#start-page{
+#start-page{  
   padding: 30px;
   font-size: 20px;
   position: relative;
 }
-#start-page>.flex-column{
-  gap: 40px;
-  padding-top: 10%;
+#start-page>div{
+  gap: 80px;  
 }
 /* clock */
 #clock{
-  width: 100%;
-  text-align: center;
-  /* font-size: 60px; */
-  font-family: 'ONE-Mobile-POP';
+  font-family: 'establishRoomNo703OTF';
+  text-align: right;
+  font-size: 40px;
 }
 #clock.flex-column{
-  gap: 50px;
+  gap: 10px;
 }
 .time-clock{
-  /* font-size: 40px; */
-  /* font-family: 'SF_IceLemon'; */
-  font-family:cursive;
+  /* font-size: 40px; */  
+}
+/* quote */
+#quotewrap{
+  font-family: 'establishRoomNo703OTF';
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+}
+#quote{  
+  font-style: italic;
+}
+#quotewrap p {
+  font-size: 20px;
 }
 /* user */
-#user{}
 .userwrap{
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  width: 32%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.rename{
-  position: absolute;
-  bottom: -4px;
-  right: -60px;
+  font-family: 'ONE-Mobile-POP';
+  font-size: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .rename img:hover{
   filter: none;
@@ -47,44 +52,32 @@
   height: 50px;
   filter: invert();
 }
-/* quote */
-#quotewrap{
-  text-align: center;
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: 'establishRoomNo703OTF';
-}
-#quote{  
-  font-style: italic;
-}
-#quotewrap p {
-  font-size: 20px;
-}
 /* todo list */
 #todo-list{
-  /* border: 10px solid tomato; */
+  transition:all 500ms linear;
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   transition: 0.7s;
   font-size: 20px;
-  background-color: var(--color1);
 }
-.todo-btn{
+.todo-btn{  
+  margin: 30px;
   float: right;
 }
 .todo-btn img{
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(197deg) brightness(104%) contrast(101%);
+}
+.todo-btn img:hover{
   filter: invert();
+  transition: 0.5s;
 }
 .todo-page,
 .todo-form,
 .todo-box{
-  /* border: 5px solid white; */
   padding: 10px;
 } 
 .todo-page {
@@ -104,8 +97,7 @@
   border: none;
   border-radius: 20px;
   background-color: inherit;
-  color: white;
-  font-family: 'ONE-Mobile-POP';
+  color: white;  
 }
 .todo-form input::placeholder{
   color: white;
@@ -135,11 +127,11 @@
   animation: fadein 0.7s;
 }
 .todo-box li p {
+  font-size: 30px;
   min-width: 70%;
   text-align: center;
   border-bottom: 2px solid white;
   padding-bottom: 3px;
 }
 .todo-box li button {
-  font-size: 30px;
 }

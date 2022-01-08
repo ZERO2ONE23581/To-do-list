@@ -4,12 +4,13 @@
   --color2:#FBF37C;
 }
 body{
-  background-color: var(--color1);
+  background: url('../img/wallpaper.jpg');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
   color: whitesmoke;
   font-family: 'ONE-Mobile-POP';
 }
 #app{
-  
 }
 /* flex */
 .flex-column {

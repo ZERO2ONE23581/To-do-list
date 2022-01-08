@@ -23,7 +23,7 @@ function loginSub(event) {///2번
 }
 function recordName() {///3번
   const savedName = localStorage.getItem(USERNAME);
-  singedInUser.innerText = `Good morning, ${savedName}!`;
+  singedInUser.innerText = `Hello, ${savedName}!`;
   start();
 }
 function start() {
